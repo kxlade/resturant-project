@@ -44,6 +44,7 @@ const MenuGallery = ({
                                         <button
                                             className="menu-page__button"
                                             type="button"
+                                            aria-expanded={isExpanded}
                                             onClick={() => handleViewDetails(itemId)}
                                         >
                                             {isExpanded ? "Hide details" : "View details"}
@@ -51,6 +52,7 @@ const MenuGallery = ({
                                         <button
                                             className="menu-page__button menu-page__button--ghost"
                                             type="button"
+                                            aria-pressed={isSaved}
                                             onClick={() =>
                                                 onToggleShortlist?.({
                                                     id: itemId,
@@ -107,8 +109,8 @@ const MenuGallery = ({
                     </div>
                 ) : (
                     <p className="shortlist-panel__empty">
-                        Use <strong>View details</strong> to expand the dish description and
-                        <strong> Add to shortlist</strong> to save it for later.
+                        Choose <strong>View details</strong> to read more, or add a dish to
+                        your shortlist to keep it handy.
                     </p>
                 )}
             </aside>

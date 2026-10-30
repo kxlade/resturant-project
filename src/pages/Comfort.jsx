@@ -12,27 +12,27 @@ export const Comfort = ({ onNavigate = () => {}, shortlist = [], onToggleShortli
         {
             src: burgers,
             name: "Gourmet Burgers",
-            description: "Juicy, stacked, and ideal for a bold hero image.",
+            description: "A juicy, stacked burger layered with fresh toppings and served on a soft toasted bun.",
         },
         {
             src: mac,
             name: "Mac and Cheese",
-            description: "Rich textures and gooey visuals make this one pop.",
+            description: "Creamy cheese sauce coats tender pasta for a comforting, oven-finished classic.",
         },
         {
             src: chicken,
             name: "Fried Chicken",
-            description: "Great for crispy close-up photography and warm tones.",
+            description: "Crispy seasoned chicken with a golden crust and a tender, flavourful centre.",
         },
         {
             src: fries,
             name: "Loaded Fries",
-            description: "A high-contrast card with lots of toppings and color.",
+            description: "Golden fries topped with savoury extras, fresh herbs and a generous drizzle of sauce.",
         },
         {
             src: friesTwo,
             name: "Loaded Fries II",
-            description: "A high-contrast card with lots of toppings and color.",
+            description: "A shareable portion of crisp fries finished with bold toppings and a savoury sauce.",
         },
     ];
 
@@ -51,11 +51,11 @@ export const Comfort = ({ onNavigate = () => {}, shortlist = [], onToggleShortli
 
                     <p className="menu-page__eyebrow">Comfort Food</p>
                     <h1 className="menu-page__title">
-                        Warm, familiar plates for when you want something satisfying.
+                        Comforting favourites, freshly made for a satisfying meal.
                     </h1>
                     <p className="menu-page__lead">
-                        This page is ready for your final dish images. Each card keeps a
-                        consistent shape, so the section stays polished on desktop and mobile.
+                        From crispy chicken to loaded fries, explore hearty favourites made
+                        for relaxed lunches, family dinners and everything in between.
                     </p>
 
                     <MenuGallery

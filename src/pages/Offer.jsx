@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
 
-export const Offer = ({ onNavigate, shortlist = [] }) => {
+export const Offer = ({ onNavigate, shortlist = [], onToggleShortlist }) => {
     const [selectedOffer, setSelectedOffer] = useState(offerItems[0]);
 
     const nextSteps = [
@@ -120,14 +120,20 @@ export const Offer = ({ onNavigate, shortlist = [] }) => {
                         {shortlist.length > 0 ? (
                             <div className="shortlist-panel__items">
                                 {shortlist.map((item) => (
-                                    <span className="shortlist-chip shortlist-chip--static" key={item.id}>
+                                    <button
+                                        className="shortlist-chip"
+                                        key={item.id}
+                                        type="button"
+                                        aria-label={`Remove ${item.name} from shortlist`}
+                                        onClick={() => onToggleShortlist?.(item)}
+                                    >
                                         {item.name}
-                                    </span>
+                                    </button>
                                 ))}
                             </div>
                         ) : (
                             <p className="shortlist-panel__empty">
-                                Tap <strong>Add to shortlist</strong> on Italian, Comfort, or Healthy Modern dishes to build a small save list.
+                                Add dishes from any menu section to keep them together here. Select a saved dish to remove it.
                             </p>
                         )}
                     </div>

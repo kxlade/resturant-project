@@ -55,7 +55,7 @@ function App() {
     italian: (<Italian onNavigate={handleNavigate} shortlist={shortlist} onToggleShortlist={handleToggleShortlist} />),
     streetfood: <GlobalStreetFood onNavigate={handleNavigate} shortlist={shortlist} onToggleShortlist={handleToggleShortlist} />,
     healthy: (<HealthyModern onNavigate={handleNavigate} shortlist={shortlist} onToggleShortlist={handleToggleShortlist} />),
-    offer: <Offer onNavigate={handleNavigate} shortlist={shortlist} />,
+    offer: <Offer onNavigate={handleNavigate} shortlist={shortlist} onToggleShortlist={handleToggleShortlist} />,
     shop: <Shop onNavigate={handleNavigate} />,
   };
 

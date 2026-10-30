@@ -24,10 +24,11 @@ export const Italian = ({ onNavigate = () => {}, shortlist = [], onToggleShortli
 
                     <p className="menu-page__eyebrow">Italian Classics</p>
                     <h1 className="menu-page__title">
-                        A rich, high-impact collection built for elegant food photography.
+                        Italian favourites, from slow-simmered classics to fresh, simple plates.
                     </h1>
                     <p className="menu-page__lead">
-                        Each dish card is sized for a future image and a short description so your layout stays balanced once you add your own image source.
+                        Discover familiar recipes and regional flavours, prepared with care
+                        and served with the ingredients that make each dish special.
                     </p>
 
                     <MenuGallery

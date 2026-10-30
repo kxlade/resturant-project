@@ -9,22 +9,22 @@ import MenuGallery from "../components/MenuGallery";
 const streetFoodDishes = [
     {
         name: "Korean BBQ Bowls",
-        description: "Bright reds, greens, and grains make this a vibrant centerpiece.",
+        description: "Tender Korean-style barbecue served over rice with crisp vegetables and a savoury sauce.",
         src: bowl,
     },
     {
         name: "Mexican Tacos Al Pastor",
-        description: "Colorful toppings and layered textures with great visual energy.",
+        description: "Warm tortillas filled with marinated pork, pineapple, onion and fresh coriander.",
         src: tacos,
     },
     {
         name: "Japanese Ramen",
-        description: "Steam, broth, and toppings create a deep and dramatic image.",
+        description: "A warming bowl of noodles in rich broth, finished with savoury toppings and fresh herbs.",
         src: ramen,
     },
     {
         name: "Indian Butter Chicken",
-        description: "Warm tones and creamy sauce that photograph beautifully on light backgrounds.",
+        description: "Tender chicken in a gently spiced, creamy tomato sauce, served with fragrant rice.",
         src: butterChicken,
     },
 ];
@@ -40,9 +40,10 @@ export const GlobalStreetFood = ({ onNavigate = () => { }, shortlist = [], onTog
                     </div>
 
                     <p className="menu-page__eyebrow">Global Street Food</p>
-                    <h1 className="menu-page__title">Trendy, colorful plates with high contrast and a lot of personality.</h1>
+                    <h1 className="menu-page__title">Street food favourites packed with bold flavours from around the world.</h1>
                     <p className="menu-page__lead">
-                        The card system below gives you a ready-made image grid for vivid food photography and short supporting text.
+                        Explore vibrant dishes inspired by food stalls and kitchens across
+                        the globe, from smoky barbecue bowls to comforting ramen.
                     </p>
 
                     <MenuGallery

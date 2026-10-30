@@ -22,10 +22,11 @@ export const HealthyModern = ({ onNavigate = () => {}, shortlist = [], onToggleS
 
                     <p className="menu-page__eyebrow">Healthy and Modern</p>
                     <h1 className="menu-page__title">
-                        Clean layouts and fresh ingredients designed for a polished menu section.
+                        Fresh, balanced dishes with plenty of flavour in every bite.
                     </h1>
                     <p className="menu-page__lead">
-                        The image areas are intentionally spacious so your future photos can sit inside a neat, consistent grid.
+                        Find colourful bowls, wholesome ingredients and lighter options
+                        made to leave you feeling satisfied.
                     </p>
 
                     <MenuGallery
