@@ -1,0 +1,22 @@
+.back-to-top {
+    width: 44px;
+    opacity: 0.7;
+    z-index: 99999999999;
+    position: fixed;
+    bottom: 10px;
+    padding: 5px;
+    left: 95%;
+    background: rgba(234, 233, 231, 0.091);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border: 1px rgba(234, 233, 231, 0.329) solid;
+    border-radius: 100%;
+    cursor: pointer;
+    display: none;
+    /* float: right; */
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
