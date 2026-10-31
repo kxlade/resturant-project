@@ -1,16 +1,61 @@
-# React + Vite
+# Restaurant Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A food and restaurant discovery website built with React and Vite. Browse food collections and themed menus, explore dishes, save favourites to a shortlist, and visit the site's newsletter, offers, and shop pages.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Home page with featured food and navigation to the site's sections
+- Dish collections for comfort food, Italian dishes, global street food, healthy modern food, new dishes, and offers
+- Shortlist controls for saving dishes while browsing
+- About, newsletter, and shop sections
+- Reusable React components and locally stored food imagery
 
-## React Compiler
+## Getting started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Requirements
 
-## Expanding the ESLint configuration
+- Node.js
+- npm (included with Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install and run
+
+```bash
+git clone https://github.com/kxlade/resturant-project.git
+cd resturant-project
+npm install
+npm run dev
+```
+
+Vite prints a local URL in the terminal. Open it in your browser to view the site. The development server supports hot module replacement, so changes appear as you work.
+
+## Available commands
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Check the project with ESLint |
+
+## Project structure
+
+```text
+public/             Static public assets
+src/
+  assets/           Food photography and other imported assets
+  components/       Shared site sections and interface components
+  pages/            Food collections and supporting pages
+  App.jsx           Page selection and shared shortlist state
+  main.jsx          React application entry point
+```
+
+## Built with
+
+- React
+- Vite
+- Font Awesome icons
+- Plain CSS
+
+## Notes
+
+This repository contains the front-end application. The shortlist is held in React state while the app is open; it is not saved across page reloads. To contribute, create a branch, make your changes, and open a pull request.
